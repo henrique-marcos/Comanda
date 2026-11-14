@@ -1,0 +1,20 @@
+export type Role = "pedidos" | "cozinha" | "caixa" | "admin";
+export type Estado = "novo" | "preparo" | "pronto" | "cancelado";
+export type Line = { id?: number; n: string; p: number; q: number; ex?: boolean };
+export type Order = {
+  id: number;
+  numero: number;
+  dia: string;
+  criado_em: string;
+  itens: Line[];
+  observacao: string | null;
+  total: number;
+  estado: Estado;
+  pago: boolean;
+  pago_em: string | null;
+  lancado: boolean;
+  lancado_em: string | null;
+  pronto_em: string | null;
+  cancelado_em: string | null;
+};
+export type MenuItem = { id: number; nome: string; preco: number; categoria: string };
