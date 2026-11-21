@@ -186,3 +186,11 @@ select{background:var(--card);border:1px solid var(--line);border-radius:8px;pad
 .chart .lc-hit{fill:transparent;cursor:pointer}
 .lc-read{margin:0 0 6px;min-height:1.4em}
 .lc-read b{color:var(--ink)}
+
+
+/* Evita zoom automático no Safari/iPhone */
+input,
+textarea,
+select {
+  font-size: 16px !important;
+}
